@@ -1,0 +1,77 @@
+.chatForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatForm__buttonWrapper {
+  width: 100%;
+  margin-block: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.chatForm__button {
+  margin-inline: 8px;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.positive {
+  background-color: hsl(142 70.2% 38.6%);
+}
+.positive:hover {
+  background-color: hsl(142 70.2% 48.6%);
+}
+.negative {
+  background-color: hsl(358, 79%, 56%);
+}
+.negative:hover {
+  background-color: hsl(358, 79%, 66%);
+}
+
+.FormItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-block: 8px;
+}
+.FormItem__main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-auto-rows: min-content;
+  gap: 10px;
+  row-gap: 0px;
+  align-items: center;
+}
+.FormItem__label {
+  grid-column: 1/2;
+}
+.FormItem__input {
+  padding: 8px 4px;
+  margin-block: 8px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.FormItem__input:focus {
+  border: none;
+  box-shadow: 0 0 0 2px rgb(37 211 102);
+}
+
+.FormItem__message {
+  grid-column: 2/-1;
+  font-size: 0.85em;
+}
+
+.errorMsg {
+  color: hsl(358, 79%, 56%);
+}
+
+.errorItem {
+  border: 2px solid hsl(358, 79%, 56%);
+}
